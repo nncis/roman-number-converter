@@ -3,21 +3,19 @@ const convertBtn = document.getElementById("convert-btn");
 const output = document.getElementById("output");
 
 const firstDigit = (input) => {
-
 	let result = "";
-
 	if (input <= 3) {
 		while (input > 0) {
 			input--;
 			result += "I";
 		}
 	} else if (input == 4) {
-		result = "IV"
+		result = "IV";
 	} else if (input >= 5 && input < 9) {
 		result = "V";
 		while (input > 5) {
 			input--;
-			result += "I"
+			result += "I";
 		}
 	} else if (input == 9) {
 		result = "IX";
@@ -26,9 +24,7 @@ const firstDigit = (input) => {
 };
 
 const secondDigit = (input) => {
-
 	let result = "";
-
 	if (input <= 3) {
 		while (input > 0) {
 			input--;
@@ -49,9 +45,7 @@ const secondDigit = (input) => {
 };
 
 const thirdDigit = (input) => {
-
 	let result = ""
-
 	if (input <= 3) {
 		while (input > 0) {
 			input--;
@@ -72,9 +66,7 @@ const thirdDigit = (input) => {
 };
 
 const fourtDigit = (input) => {
-
 	let result = "";
-
 	if (input <= 3) {
 		while (input > 0) {
 			input--;
@@ -88,12 +80,12 @@ const converter = (input) => {
 	if (!input) {
 		return "Please enter a valid number";
 	} else if (input <= 0) {
-		return "Please enter a number greater than or equal to 1"
+		return "Please enter a number greater than or equal to 1";
 	} else if (input >= 4000) {
-		return "Please enter a number less than or equal to 3999"
+		return "Please enter a number less than or equal to 3999";
 	} else {
 		return fourtDigit(input[input.length - 4]) + thirdDigit(input[input.length - 3]) + secondDigit(input[input.length - 2]) + firstDigit(input[input.length - 1]);
-	}
+	};
 };
 
 const displayResult = (input) => {
