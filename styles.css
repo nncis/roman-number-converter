@@ -1,0 +1,97 @@
+:root {
+--amaranth-red:#D32929;
+--deep-lemon: #FACD1E;
+--old-lace: #FFF5E6;
+--dutch-white:  #E5DBB7;
+--dark-vanilla: #CAC198;
+--antique-ruby: #7F2122;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: var(--old-lace);
+    font-family: Times, serif;;
+    color: var(--green-5);
+}
+
+#main-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+#title{
+    text-align: center;
+}
+
+#input-container {
+    width: 90%;
+    max-width: 500px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    margin: 20px 10px;
+    background-color: var(--dark-vanilla);
+}
+
+
+
+#input-title {
+    
+    text-align: center;
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#number {
+    width: 70%;
+    height: 50px;
+    margin: 8px;
+    padding: 0 5px;
+    border: 1px solid black;
+    background-color: var(--dutch-white);
+    font-size: 2rem;
+    color: black;
+
+}
+
+#convert-btn {
+    width: 73%;
+    height: 50px;
+    margin: 8px;
+    cursor: pointer;
+    font-size: 1.7rem;
+    background-color: var(--deep-lemon);
+    border: 1px solid black;
+}
+
+#output {
+    width: 90%;
+    max-width: 500px;
+    min-height: 50px;
+    border: 2px solid black;
+    background-color: var(--dark-vanilla);
+}
+
+#result-p {
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.hidden {
+    display: none;
+}
